@@ -39,9 +39,9 @@ out.write(frame)
 
 ### 키 이벤트 처리
 key = cv2.waitKey(1)
-if key == 27:  # ESC 키를 누르면 종료
+if key == 27:  
 break
-elif key == ord(' '):  # 스페이스 키를 누르면 모드 변경
+elif key == ord(' '):
 mode = "Record" if mode == "Preview" else "Preview"
 
 ### 사용한 자원 해제
