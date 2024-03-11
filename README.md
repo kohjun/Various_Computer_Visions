@@ -1,7 +1,6 @@
 # Various_Computer_Visions
 My various video recoder using OpenCV
 
-
 import cv2
 
 # 카메라 영상을 받아오기 위한 객체 생성
@@ -19,15 +18,16 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 # 코덱과 FPS 설정
 codec = cv2.VideoWriter_fourcc(*'XVID')
 fps = 20.0
+# 조건문 상태
 while True:
-    # 카메라에서 프레임을 읽어옴
+    *카메라에서 프레임을 읽어옴
     ret, frame = cap.read()
 
-    # Record 모드 시 화면에 빨간색 원 표시
+    *Record 모드 시 화면에 빨간색 원 표시
     if mode == "Record":
         cv2.circle(frame, (50, 50), 30, (0, 0, 255), -1)
 
-    # 프레임을 출력
+    *프레임을 출력
     if mode == "Preview":
         cv2.imshow('Preview', frame)
     elif mode == "Record":
@@ -35,7 +35,7 @@ while True:
         cv2.imshow('Recording', frame)
         out.write(frame)
 
-    # 키 이벤트 처리
+    *키 이벤트 처리
     key = cv2.waitKey(1)
     if key == 27:  # ESC 키를 누르면 종료
         break
