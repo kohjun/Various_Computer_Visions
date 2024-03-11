@@ -19,7 +19,6 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 # 코덱과 FPS 설정
 codec = cv2.VideoWriter_fourcc(*'XVID')
 fps = 20.0
-
 while True:
     # 카메라에서 프레임을 읽어옴
     ret, frame = cap.read()
