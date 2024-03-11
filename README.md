@@ -50,4 +50,5 @@ cv2.destroyAllWindows()
 ## [running screenshot]
 
 ![image](https://github.com/kohjun/Various_Computer_Visions/assets/82298792/ea8f6a67-c74b-4782-a9d2-e108b1eb0dff)
-빨간색 원 + recording을 통해 녹화중임을 표시
+
+*빨간색 원 + recording을 통해 녹화중임을 표시*
